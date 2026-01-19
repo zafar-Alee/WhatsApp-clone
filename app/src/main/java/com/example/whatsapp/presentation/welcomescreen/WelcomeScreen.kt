@@ -17,8 +17,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
-import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -36,7 +34,7 @@ fun WelcomeScreen(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Image(
-            painter = painterResource(id = R.drawable.whatsappsticker),
+            painter = painterResource(id = R.drawable.whatsapp_sticker1),
             contentDescription = null,
             modifier = Modifier.size(300.dp)
 
@@ -46,7 +44,7 @@ fun WelcomeScreen(modifier: Modifier = Modifier) {
         Spacer(modifier.height(24.dp))
 
         Row() {
-            Text("Read our ", color = Color.Gray)
+            Text("Read our", color = Color.Gray)
             Spacer(Modifier.width(8.dp))
             Text("Privacy Policy", color = colorResource(R.color.light_green))
 
